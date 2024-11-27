@@ -21,8 +21,10 @@ const config = {
   tagline: "Discover - Create - Contribute",
 
   // CONIFIG: Used for GitHub Pages
-  url: "https://azure.github.io",
-  baseUrl: "/trainer-demo-deploy/",
+  //url: "https://azure.github.io",
+  //baseUrl: "/trainer-demo-deploy/",
+  url: "https://petender.github.io",
+  baseUrl: "/tdd-site/",
   favicon: "img/favicon.ico",
   organizationName: "azure",
   projectName: "trainer-demo-deploy",
