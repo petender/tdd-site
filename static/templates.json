@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Starter - az104",
+    "description": "A starter template with az104 as infrastructure provider",
+    "preview": "./templates/images/apptemplate-wordpress-on-ACA.png",
+    "website": "https://github.com/Azure/azure-dev",
+    "author": "Azure Dev",
+    "source": "https://github.com/Azure-Samples/azd-starter-az104",
+    "tags": ["az-104", "msft", "appinsights", "cosmosdb", "new", "hot"]
+  },
+  {
+    "title": "Starter - ai102",
+    "description": "A starter template with ai102 as infrastructure provider",
+    "preview": "./templates/images/test.png",
+    "website": "https://github.com/Azure/azure-dev",
+    "author": "Azure Dev",
+    "source": "https://github.com/Azure-Samples/azd-starter-ai102",
+    "tags": ["ai-102", "msft", "new"]
+  }
+  
+  
+]
