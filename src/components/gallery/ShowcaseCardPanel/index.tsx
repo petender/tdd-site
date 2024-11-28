@@ -25,6 +25,7 @@ import {
 } from "@fluentui/react";
 import ShowcaseMultipleAuthors from "../ShowcaseMultipleAuthors/index";
 import ShowcaseCardTag from "../ShowcaseTag/index";
+import ShowcaseDemoGuide from "../ShowcaseDemoGuide/index";
 import { useColorMode } from "@docusaurus/theme-common";
 
 function CopyButton({ url, colorMode }: { url: string; colorMode: string }) {
@@ -103,6 +104,8 @@ export default function ShowcaseCardPanel({ user }: { user: User }) {
   let templateURL = user.source
     .replace("https://github.com/", "")
     .toLowerCase();
+
+  
   
   const mkdirCommand = "mkdir " + templateURL;
   const cddirCommand = "cd " + templateURL;  
@@ -636,7 +639,7 @@ export default function ShowcaseCardPanel({ user }: { user: User }) {
                   padding: "10px 0",
                 }}
               >
-                This is a demo guide for the template.
+                <ShowcaseDemoGuide url={user.demoguide}/>
               </div>
             </div>
           </Label>

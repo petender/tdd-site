@@ -19,6 +19,7 @@ export type User = {
   website: string;
   author: string;
   source: string | null;
+  demoguide: string | null;
   tags: TagType[];
 };
 

@@ -6,15 +6,17 @@
     "website": "https://github.com/Azure/azure-dev",
     "author": "Azure Dev",
     "source": "https://github.com/Azure-Samples/azd-starter-az104",
-    "tags": ["az-104", "msft", "appinsights", "cosmosdb", "new", "hot"]
+    "tags": ["az-104", "msft", "appinsights", "cosmosdb", "new", "hot"],
+    "demoguide": "https://raw.githubusercontent.com/petender/MyRetailBizzNizz/main/Labs/LAB01_ADO_Boards.md"
   },
   {
     "title": "Starter - ai102",
     "description": "A starter template with ai102 as infrastructure provider",
     "preview": "./templates/images/test.png",
     "website": "https://github.com/Azure/azure-dev",
-    "author": "Azure Dev",
+    "author": "petender",
     "source": "https://github.com/Azure-Samples/azd-starter-ai102",
+    "demoguide": "https://raw.githubusercontent.com/petender/EShopOnWeb-GHRepo/refs/heads/main/README.md",
     "tags": ["ai-102", "msft", "new"]
   }
   
