@@ -622,6 +622,25 @@ export default function ShowcaseCardPanel({ user }: { user: User }) {
             </div>
           </Label>
         </PivotItem>
+        <PivotItem headerText="Demo Guide">
+          <Label>
+            <div
+              className={styles.textColor}
+              style={{
+                fontSize: "14px",
+                fontWeight: "400",
+              }}
+            >
+              <div
+                style={{
+                  padding: "10px 0",
+                }}
+              >
+                This is a demo guide for the template.
+              </div>
+            </div>
+          </Label>
+        </PivotItem>
       </Pivot>
     </div>
   );
