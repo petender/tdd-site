@@ -126,6 +126,8 @@ export default function ShowcaseTemplateSearch() {
           style={{
             display: "flex",
             flexDirection: "column",
+            position: "relative",
+            left: "20px",
           }}
         >
           <h1 className={styles.heroBar}>

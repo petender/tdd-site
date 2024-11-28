@@ -77,7 +77,7 @@ const config = {
       // CONFIG: navbar logo, items, style, stickiness
       //    See: https://docusaurus.io/docs/next/api/themes/configuration#navbar
       navbar: {
-        title: "trainer-demo-deploy",
+        title: "Home",
         logo: {
           alt: "Trainer Demo Deploy logo",
           src: "img/logo.png",
