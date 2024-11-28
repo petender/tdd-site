@@ -17,11 +17,11 @@ const TagComp = React.forwardRef<HTMLDivElement, Tag>(
       size="medium"
       ref={ref}
       title={description}
-      color="informative"
       style={{
         alignContent: "center",
         fontSize: "10px",
         width:"auto",
+        color: "#e860cb",
       }}
     >
       {label}
