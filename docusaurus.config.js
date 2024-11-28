@@ -27,7 +27,8 @@ const config = {
   baseUrl: "/tdd-site/",
   favicon: "img/favicon.ico",
   organizationName: "azure",
-  projectName: "trainer-demo-deploy",
+  //projectName: "trainer-demo-deploy",
+  projectName: "tdd-site",
   deploymentBranch: "gh-pages",
 
   // CONFIG: Early detection for site health
