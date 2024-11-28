@@ -20,15 +20,20 @@ const config = {
   title: "Microsoft Trainer Demo Deploy",
   tagline: "Discover - Create - Contribute",
 
-  // CONIFIG: Used for GitHub Pages
-  //url: "https://azure.github.io",
-  //baseUrl: "/trainer-demo-deploy/",
+  // CONIFIG: Used for GitHub Pages in test-site
+  // To test-site: https://petender.github.io/tdd-site/
   url: "https://petender.github.io",
   baseUrl: "/tdd-site/",
-  favicon: "img/favicon.ico",
-  organizationName: "azure",
-  //projectName: "trainer-demo-deploy",
   projectName: "tdd-site",
+  favicon: "img/favicon.ico",
+
+  // CONIFIG: Used for GitHub Pages in production
+  // To production site: https://microsoftlearning.github.io/trainer-demo-deploy/
+  //url: "https://petender.github.io",
+  //baseUrl: "/trainer-demo-deploy/",
+  //organizationName: "microsoftlearning",
+  //projectName: "trainer-demo-deploy",
+  //favicon: "img/favicon.ico",
   deploymentBranch: "gh-pages",
 
   // CONFIG: Early detection for site health
