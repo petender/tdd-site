@@ -65,10 +65,10 @@ export default function ShowcaseSurveyCard(): React.ReactElement {
         width={128}
       />
       <div className={styles.text}>
-        <Subtitle1 align="center">Got a minute? We're all ears!</Subtitle1>
+        <Subtitle1 align="center">Have a sec?  We'd love to hear from you!</Subtitle1>
         <Body2 align="center">
-          Help us shape the future of our template library by sharing your
-          feedback.
+          Contribute to the success of this project by completing a short survey. We appreciate
+          your feedback.
         </Body2>
       </div>
       <CardFooter>
