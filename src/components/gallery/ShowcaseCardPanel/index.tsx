@@ -567,6 +567,11 @@ export default function ShowcaseCardPanel({ user }: { user: User }) {
                 </Popup>
               )}
             </div>
+            <div>
+              <a href={user.preview} download>
+              <img src={user.preview} alt={user.description} />
+              </a>
+            </div>
           </Label>
         </PivotItem>
         <PivotItem
@@ -733,8 +738,11 @@ function ShowcaseCardAzureTag({
               Learn More
             </a>
           </div>
+
         </div>
       </div>
+
+
     ) : null;
   });
-}
+  }
