@@ -76,6 +76,8 @@ export default function ShowcaseSurveyCard(): React.ReactElement {
           appearance="primary"
           size="large"
           className={styles.surveyButton}
+          // trace in Application Insights
+          data-event-name="takeSurveyButtonClicked"
           onClick={() => {
             window.open("https://github.com/MicrosoftLearning/trainer-demo-deploy/issues/new?assignees=petender&labels=feedback&projects=&template=feedback_template.md&title=%5BFeedback%5D", "_blank");
           }}
