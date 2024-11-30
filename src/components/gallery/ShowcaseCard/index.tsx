@@ -76,6 +76,9 @@ function ShowcaseCard({ user }: { user: User }): JSX.Element {
   // Adobe Analytics Content
   //const contentForAdobeAnalytics = `{\"id\":\"${title}\",\"cN\":\"Copy Button (azd init)\"}`;
 
+  // PDT trying custom event for Application Insights
+  const contentforAppInsights = `{\"id\":\"${title}\",\"cN\":\"Copy Button (azd init)\"}`;
+
   // Panel
   const { colorMode } = useColorMode();
   const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] =
@@ -283,6 +286,8 @@ function ShowcaseCard({ user }: { user: User }): JSX.Element {
                 navigator.clipboard.writeText(azdInitCommand);
               }}
               //data-m={contentForAdobeAnalytics}
+              //PDT logging custom event for Application Insights
+              data-event-name={contentforAppInsights}
             >
               <img src={useBaseUrl("/img/Copy.svg")} height={20} alt="Copy" />
             </Button>
