@@ -106,7 +106,7 @@ const adobeInit = () => {
   setNonEssentialCookies(WcpConsent.siteConsent.getConsent());
 
   // 1DS initialization
-  try {
+  /*try {
     const analytics = new oneDS.ApplicationInsights();
     var config = {
       instrumentationKey:
@@ -148,6 +148,7 @@ const adobeInit = () => {
       throw error;
     }
   }
+    */
 };
 
 export default function NavbarLayout({ children }) {

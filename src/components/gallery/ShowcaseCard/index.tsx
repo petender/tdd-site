@@ -74,7 +74,7 @@ function ShowcaseCard({ user }: { user: User }): JSX.Element {
   let headerText = "MCT Authored";
 
   // Adobe Analytics Content
-  const contentForAdobeAnalytics = `{\"id\":\"${title}\",\"cN\":\"Copy Button (azd init)\"}`;
+  //const contentForAdobeAnalytics = `{\"id\":\"${title}\",\"cN\":\"Copy Button (azd init)\"}`;
 
   // Panel
   const { colorMode } = useColorMode();
@@ -282,7 +282,7 @@ function ShowcaseCard({ user }: { user: User }): JSX.Element {
               onClick={() => {
                 navigator.clipboard.writeText(azdInitCommand);
               }}
-              data-m={contentForAdobeAnalytics}
+              //data-m={contentForAdobeAnalytics}
             >
               <img src={useBaseUrl("/img/Copy.svg")} height={20} alt="Copy" />
             </Button>
