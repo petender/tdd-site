@@ -1,4 +1,4 @@
-name: Test Deploy (on PR)
+name: Manual Push to GitHub Pages
 
 on:
   workflow_dispatch:
