@@ -13,8 +13,8 @@ permissions:
   contents: read
 
 jobs:
-  test-deploy:
-    name: Test deployment
+  test-build:
+    name: Test and Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
           path: build
   deploy:
     name: Deploy to GitHub Pages
-    needs: test-deploy
+    needs: test-build
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
@@ -59,6 +59,7 @@ jobs:
       - name: Set Environment variable for Production
         if: github.ref == 'refs/heads/main'
         run: echo "DEPLOY_ENV=production" >> $GITHUB_ENV  
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
