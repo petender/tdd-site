@@ -285,7 +285,7 @@ function ShowcaseCard({ user }: { user: User }): JSX.Element {
               onClick={() => {
                 navigator.clipboard.writeText(azdInitCommand);
               }}
-              //data-m={contentForAdobeAnalytics}
+              
               //PDT logging custom event for Application Insights
               data-event-name={contentforAppInsights}
             >
