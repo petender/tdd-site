@@ -53,23 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-    #  - name: Deploy to GitHub Pages
-    #    id: deployment
-    #    uses: actions/deploy-pages@v4
-       - name: Checkout code
-         uses: actions/checkout@v4
-       - name: Set up Node.js
-         uses: actions/setup-node@v4
-         with:
-           node-version: 20
-       - name: Set environment variable for staging
-         if: github.ref == 'refs/heads/staging'
-         run: echo "DEPLOY_ENV=staging" >> $GITHUB_ENV
-       - name: Set environment variable for production
-         if: github.ref == 'refs/heads/main'
-         run: echo "DEPLOY_ENV=production" >> $GITHUB_ENV
-       - name: Build and deploy
-         run: |
-          npm ci
-          npm run build
-          npm run deploy
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+    
