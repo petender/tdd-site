@@ -265,17 +265,5 @@ const config = {
   ],
 };
 
-const isProduction = process.env.DEPLOY_ENV === 'production';
-
-if (isProduction) {
-  config.url = "https://microsoftlearning.github.io";
-  config.baseUrl = "/trainer-demo-deploy/";
-  config.organizationName = "microsoftlearning";
-  config.projectName = "trainer-demo-deploy";
-} else {
-  config.url = "https://petender.github.io";
-  config.baseUrl = "/tdd-site/";
-  config.projectName = "tdd-site";
-}
 
 module.exports = config;
