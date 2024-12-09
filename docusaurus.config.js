@@ -23,7 +23,7 @@ const config = {
   // CONIFIG: Used for GitHub Pages in test-site
   // To test-site: https://petender.github.io/tdd-site/
   // For Staging:
-  export DEPLOY_ENV=staging
+  
   url: "https://petender.github.io",
   baseUrl: "/tdd-site/",
   projectName: "tdd-site",
@@ -32,7 +32,7 @@ const config = {
   // CONIFIG: Used for GitHub Pages in production
   // To production site: https://microsoftlearning.github.io/trainer-demo-deploy/
   // For Production:
-  export DEPLOY_ENV=production
+  
   //url: "https://petender.github.io",
   //baseUrl: "/trainer-demo-deploy/",
   //organizationName: "microsoftlearning",
