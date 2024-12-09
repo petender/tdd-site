@@ -8,6 +8,8 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import { manageCookieLabel } from "./constants.js";
 
+const isProd = process.env.DEPLOY_ENV === 'production';
+
 const config = {
   // CONFIG: Add Custom Fields - globally reference them from siteConfig
   //    See: https://docusaurus.io/docs/deployment#using-environment-variables
@@ -24,9 +26,10 @@ const config = {
   // To test-site: https://petender.github.io/tdd-site/
   // For Staging:
   
-  url: "https://petender.github.io",
-  baseUrl: "/tdd-site/",
-  projectName: "tdd-site",
+  url: isProd ? "https://microsoftlearning.github.io" : "https://petender.github.io",
+  baseUrl: isProd ? "/trainer-demo-deploy/" : "/tdd-site/",
+  organizationName: isProd ? "microsoftlearning" : "petender",
+  projectName: isProd ? "trainer-demo-deploy" : "tdd-site",
   favicon: "img/favicon.ico",
 
   // CONIFIG: Used for GitHub Pages in production
