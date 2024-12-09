@@ -22,6 +22,8 @@ const config = {
 
   // CONIFIG: Used for GitHub Pages in test-site
   // To test-site: https://petender.github.io/tdd-site/
+  // For Staging:
+  export DEPLOY_ENV=staging
   url: "https://petender.github.io",
   baseUrl: "/tdd-site/",
   projectName: "tdd-site",
@@ -29,6 +31,8 @@ const config = {
 
   // CONIFIG: Used for GitHub Pages in production
   // To production site: https://microsoftlearning.github.io/trainer-demo-deploy/
+  // For Production:
+  export DEPLOY_ENV=production
   //url: "https://petender.github.io",
   //baseUrl: "/trainer-demo-deploy/",
   //organizationName: "microsoftlearning",
@@ -260,5 +264,18 @@ const config = {
     ],
   ],
 };
+
+const isProduction = process.env.DEPLOY_ENV === 'production';
+
+if (isProduction) {
+  config.url = "https://microsoftlearning.github.io";
+  config.baseUrl = "/trainer-demo-deploy/";
+  config.organizationName = "microsoftlearning";
+  config.projectName = "trainer-demo-deploy";
+} else {
+  config.url = "https://petender.github.io";
+  config.baseUrl = "/tdd-site/";
+  config.projectName = "tdd-site";
+}
 
 module.exports = config;
