@@ -1,11 +1,11 @@
 [
   {
-    "title": "Starter - az104",
+    "title": "PeterDT - AZDTest1",
     "description": "A starter template with az104 as infrastructure provider",
     "preview": "./templates/images/apptemplate-wordpress-on-ACA.png",
     "website": "https://github.com/Azure/azure-dev",
     "author": "Azure Dev",
-    "source": "https://github.com/Azure-Samples/azd-starter-az104",
+    "source": "https://github.com/petender/azdtest1213",
     "tags": ["az-104", "msft", "appinsights", "cosmosdb", "new", "hot"],
     "demoguide": "https://raw.githubusercontent.com/petender/MyRetailBizzNizz/main/Labs/LAB01_ADO_Boards.md"
   },

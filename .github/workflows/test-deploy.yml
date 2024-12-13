@@ -56,6 +56,7 @@ jobs:
       - name: Set Environment variable for Staging
         if: github.ref == 'refs/heads/staging'
         run: echo "DEPLOY_ENV=staging" >> $GITHUB_ENV
+        
       - name: Set Environment variable for Production
         if: github.ref == 'refs/heads/main'
         run: echo "DEPLOY_ENV=production" >> $GITHUB_ENV  
